@@ -24,9 +24,10 @@ getAndShowPosts();
 
 searchBar.addEventListener('keyup', (e) => {
     const searchString = e.target.value;
-    console.log(searchString);
     const filteredPosts = searchPosts.filter(post => {
-        return post.title.includes(searchString)
+        if (post != undefined && post.title != undefined) {
+            return post.title.includes(searchString)
+        } else return false;
     })
     displayPosts(filteredPosts);
 })
