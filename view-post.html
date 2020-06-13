@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a href="./home.html" class="homeBtn">Home</a>
+        <a href="./about.html" class="aboutBtn">About</a>
+    </header>
+
+    <div id="single-post"></div>
+
+    <div class="add-comment">
+        <h2>Add a comment</h2>
+        <label>UserName</label>
+        <input id="user-name">
+        <br></br>
+        <label>Comment</label>
+        <textarea id="comment-text"></textarea>
+        <button id="comment-send">Send</button>
+    </div>
+
+    <div id="commentList">
+        <button id="editCommentBtn">Edit</button>
+        <button id="deleteCommentBtn">Delete</button>
+    </div>
+
+    <script src="./classes/Post.js"></script>
+    <script src="./classes/FetchApi.js"></script>
+    <script src="./classes/Comment.js"></script>
+    <script src="./view-post.js"></script>
+
+</body>
+
+</html>

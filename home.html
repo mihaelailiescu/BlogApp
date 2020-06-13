@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a href="./home.html" class="homeBtn">Home</a>
+        <a href="./about.html" class="aboutBtn">About</a>
+        <a href="./login.html" class="loginBtn">Login</a>
+        <br></br>
+        <div id="search">
+            <input type="text" name="searchBar" id="searchBar" placeholder="search for a post" />
+        </div>
+        <br></br>
+    </header>
+
+    <form class="creationForm">
+        <label for="postAuthor">Author</label>
+        <input type="text" name="postAuthor" id="postAuthor" />
+
+        <label for="postTitle">Title </label>
+        <input type="text" value="" name="postTitle" id="postTitle" />
+
+        <label for="postText">Post-Text</label>
+        <textarea name="postText" id="postText"></textarea>
+
+        <label for="postDate">Date </label>
+        <input type="datetime" name="postDate" id="postDate" />
+
+        <button class="submitBtn">Create Post</button>
+    </form>
+
+    <div id="posts"></div>
+
+    <script src="./classes/Post.js"></script>
+    <script src="./classes/FetchApi.js"></script>
+    <script src="./classes/Comment.js"></script>
+    <script src="./home.js"></script>
+
+</body>
+
+</html>

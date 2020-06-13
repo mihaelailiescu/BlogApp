@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a href="./home.html" class="homeBtn"></a>
+        <a href="./view-post.html"></a>
+    </header>
+
+    <form id="updateForm">
+        <label for="postTitleUpdated" id="labelforUpdatedTitle">Title </label>
+        <input type="text" value="" name="postTitle" id="postTitleUpdated" />
+
+        <label for="postTextUpdated" id="labelForUpdatedText">Text</label>
+        <textarea name="postText" id="postTextUpdated"></textarea>
+
+        <button class="updateBtn" id="saveBtn">Save Changes</button>
+        <button class="cancelBtn" id="cancelBtn">Cancel</button>
+    </form>
+
+    <script src="./classes/Comment.js"></script>
+    <script src="./classes/Post.js"></script>
+    <script src="./classes/FetchApi.js"></script>
+    <script src="./edit-post.js"></script>
+
+</body>
+
+</html>
